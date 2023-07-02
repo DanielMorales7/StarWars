@@ -1,0 +1,26 @@
+#intro-container {
+    background-color: black;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+  }
+  
+  .intro-text {
+    position: relative;
+    color: yellow;
+    font-family: 'Arial', sans-serif;
+    font-size: 36px;
+    text-align: center;
+    animation: crawl 70s linear infinite;
+  }
+  
+  @keyframes crawl {
+    0% {
+      transform: translateY(80%);
+    }
+    100% {
+      transform: translateY(-200%);
+    }
+  }
